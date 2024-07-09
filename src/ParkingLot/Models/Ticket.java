@@ -64,7 +64,7 @@ public class Ticket {
         return parkingSlot;
     }
 
-    public void setParkingSlot(ParkingLot parkingLot) {
+    public void setParkingSlot(ParkingSlot parkingSlot) {
         this.parkingSlot = parkingSlot;
     }
 
