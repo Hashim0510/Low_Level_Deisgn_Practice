@@ -10,7 +10,7 @@ public class Ticket {
     private String TicketNumber;
     private Operator operator;
     private Gate gate;
-    private ParkingLot parkingLot;
+    private ParkingSlot parkingSlot;
 
     public long getId() {
         return id;
@@ -60,12 +60,12 @@ public class Ticket {
         this.gate = gate;
     }
 
-    public ParkingLot getParkingLot() {
-        return parkingLot;
+    public ParkingSlot getParkingSLot() {
+        return parkingSlot;
     }
 
-    public void setParkingLot(ParkingLot parkingLot) {
-        this.parkingLot = parkingLot;
+    public void setParkingSlot(ParkingLot parkingLot) {
+        this.parkingSlot = parkingSlot;
     }
 
 

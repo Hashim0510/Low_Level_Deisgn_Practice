@@ -43,7 +43,7 @@ public class GameController {
 
     public Player getCurrentplayer(Game game){
 
-        System.out.println("player turn idex : " + game.getCurrentPlayerTurn());
+        System.out.println("player turn index : " + game.getCurrentPlayerTurn());
         return game.getPlayers().get(game.getCurrentPlayerTurn());
 
     }

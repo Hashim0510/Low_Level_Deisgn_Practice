@@ -1,6 +1,8 @@
 package ParkingLot.Models;
 
+import ParkingLot.Models.Enums.FeeCalculationStrategyType;
 import ParkingLot.Models.Enums.ParkingLotStatus;
+import ParkingLot.Models.Enums.SlotAllocationStrategyType;
 import ParkingLot.Models.Enums.VehicleType;
 
 import java.util.List;
@@ -12,8 +14,8 @@ public class ParkingLot {
     private List<ParkingFloor> floors;
     private Gate entry;
     private Gate exit;
-    private FeeCalculationStrategy feeCalculationStrategy;
-    private SlotAllocationStrategy slotAllocationStrategy;
+    private FeeCalculationStrategyType feeCalculationStrategyType;
+    private SlotAllocationStrategyType slotAllocationStrategyType;
     private ParkingLotStatus parkingLotStatus;
     private List<VehicleType> allowedVehicleTypes;
 
@@ -57,20 +59,20 @@ public class ParkingLot {
         this.exit = exit;
     }
 
-    public FeeCalculationStrategy getFeeCalculationStrategy() {
-        return feeCalculationStrategy;
+    public FeeCalculationStrategyType getFeeCalculationStrategyType() {
+        return feeCalculationStrategyType;
     }
 
-    public void setFeeCalculationStrategy(FeeCalculationStrategy feeCalculationStrategy) {
-        this.feeCalculationStrategy = feeCalculationStrategy;
+    public void setFeeCalculationStrategy(FeeCalculationStrategyType feeCalculationStrategyType) {
+        this.feeCalculationStrategyType = feeCalculationStrategyType;
     }
 
-    public SlotAllocationStrategy getSlotAllocationStrategy() {
-        return slotAllocationStrategy;
+    public SlotAllocationStrategyType getSlotAllocationStrategyType() {
+        return slotAllocationStrategyType;
     }
 
-    public void setSlotAllocationStrategy(SlotAllocationStrategy slotAllocationStrategy) {
-        this.slotAllocationStrategy = slotAllocationStrategy;
+    public void setSlotAllocationStrategyType(SlotAllocationStrategyType slotAllocationStrategyType) {
+        this.slotAllocationStrategyType = slotAllocationStrategyType;
     }
 
     public ParkingLotStatus getParkingLotStatus() {
