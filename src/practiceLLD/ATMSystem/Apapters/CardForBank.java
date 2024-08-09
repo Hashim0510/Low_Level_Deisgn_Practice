@@ -9,14 +9,6 @@ public class CardForBank {
     private String cardNumber;
     private long pin;
 
-
-    public CardForBank(long id, CardType cardType, String cardNumber, long pin) {
-        this.id = id;
-        this.cardType = cardType;
-        this.cardNumber = cardNumber;
-        this.pin = pin;
-    }
-
     public String getCardNumber() {
         return cardNumber;
     }

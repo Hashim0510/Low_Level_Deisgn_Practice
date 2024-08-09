@@ -7,9 +7,4 @@ public class YesBankAdapter implements BankAdapter{
     public boolean authenticateFromBank(Card card, long pin) {
         return false;
     }
-
-    @Override
-    public void addAccount(Account account, CardForBank cardForBank) {
-
-    }
 }

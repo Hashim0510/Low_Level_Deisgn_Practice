@@ -9,13 +9,6 @@ public class Card extends BaseModel{
     private CardType cardType;
     private String cardNumber;
 
-    public Card(long id, BankName bankName, CardType cardType, String cardNumber) {
-        super(id);
-        this.bankName = bankName;
-        this.cardType = cardType;
-        this.cardNumber = cardNumber;
-    }
-
     public BankName getBankName() {
         return bankName;
     }
